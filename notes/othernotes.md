@@ -1,0 +1,1 @@
+- JSON is preferred over XML for being more  compact and easier to read/write
