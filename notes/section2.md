@@ -35,3 +35,51 @@
 
 
 - Comments: /* ... */ or //
+
+### Objects
+- Can declare keys as strings or just variable names
+- Can get keys with obj.key or obj["key"]
+- Functions can be values
+var john = {
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1990,
+  calcAge: function(birthYear) {
+    return 2020 - birthYear;
+  }
+}
+
+console.log(john.calcAge(john.birthYear));
+OR
+console.log(john.calcAge(this.birthYear));
+
+var john = {
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1990,
+  calcAge: function() {
+    this.age = 2020 - this.birthYear;
+  }
+}
+
+### Arrays
+- Common Methods:
+ - .push(): add elelment to end of array
+ - .unshift(): add elemnts to the front of an Array
+ - .pop(): remove element from the end of an array
+ - .shift(): remove element from front of an array
+ - .splice(): remeove/add elements in an array.
+  - parameters:
+    - start location
+    - number of elements to delete
+    - (optional) items to insert
+
+### Loops
+- for (let i = 0; i < 5; i += 3)
+- for (let i = 0; i < name.length; i++)
+- for (name in names)
+- while
+- do ... while
+- continue and break
+ - continue: skip this iteration
+ - break: break out of loop/end loop

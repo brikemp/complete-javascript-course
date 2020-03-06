@@ -39,7 +39,8 @@ fifth : "JavaScript" };
 // using for..in loops 
 for (itr in languages)  
 { 
-console.log(languages[itr] + "\n"); 
+  console.log(`Iteration variable: ${itr}`);
+  console.log(languages[itr] + "\n"); 
 } 
 
 // -------------------------------------------
